@@ -153,7 +153,7 @@ a .content_link{
     opacity: 1;
     transition: opacity 1s;
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:912px){
     h2{
         font-size: 17px;
     }
