@@ -203,4 +203,8 @@ a .content_link{
     a .content_link p{
         display: none;
     }
+    .item:hover .float_title{
+        opacity: 0;
+        transition: opacity 1s;
+    }
 }
