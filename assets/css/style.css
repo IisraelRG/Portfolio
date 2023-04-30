@@ -164,7 +164,7 @@ a .content_link{
         width: 30%;
         height: 100%;
         padding: 15px;
-        display: flex;
+        display: none;
         flex-direction: column;
         gap: 30px;
     }
