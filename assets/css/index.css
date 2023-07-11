@@ -229,6 +229,7 @@ header .nav-menuContent{
     width: 100%;
     height: auto;
     margin: 250px 0px;
+    position: relative;
 }
 .portafolio .subtitle{
     text-align: center;
@@ -238,29 +239,24 @@ header .nav-menuContent{
     position: absolute;
 }
 .portafolio .pImg:nth-child(1){
-    bottom:-300%;
-    left: 0%;
-    z-index: -1;
-}
-.portafolio .pImg:nth-child(2){
-    width: 200px;
-    top: -20%;
-    left: 12%;
+    bottom:-5%;
+    left: -5%;
     z-index: -1;
 }
 .portafolio .pImg:nth-child(3){
     width: 150px;
-    bottom:-170%;
-    right: 25%;
+    bottom:50%;
+    right: -5%;
+    z-index: -1;
 }
-.portafolio .pImg:nth-child(4){
-    width: 150px;
-    top: -60%;
-    right: 10%;
-
+.portafolio .pImg:nth-child(2){
+    width: 200px;
+    top: 0%;
+    left: -5%;
+    z-index: -1;
 }
 .portafolio-cardContainer{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     gap: 200px;
@@ -317,6 +313,7 @@ header .nav-menuContent{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .blog-cardContent{
     display: block;
@@ -354,6 +351,7 @@ header .nav-menuContent{
     justify-content: center;
 }
 .contacto-formulario{
+    position: relative;
     display: block;
     margin:auto;
     padding: 40px;
@@ -362,6 +360,26 @@ header .nav-menuContent{
     background-color: #fff;
     box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.40);
     border-radius: 10px;
+}
+.contacto .cImg{
+    position: absolute;
+}
+.contacto .cImg:nth-child(1){
+    bottom:-10%;
+    left: -30%;
+    z-index: -1;
+}
+.contacto .cImg:nth-child(2){
+    width: 200px;
+    top: -5%;
+    left: -30%;
+    z-index: -1;
+}
+.contacto .cImg:nth-child(3){
+    width: 150px;
+    bottom:50%;
+    right: -25%;
+    z-index: -1;
 }
 form{
     margin: 25px 0px;
