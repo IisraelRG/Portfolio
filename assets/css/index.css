@@ -32,19 +32,22 @@
 }
 
 body{
-    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--background_color);
+    background-color: var(--background);
+    overflow-x: hidden;
+    font-size: 16px;
 }
 .global{
     width: 100%;
     max-width: 1910px;
     padding: var(--margin);
 }
-
-body{
-    background-color: var(--background);
-    overflow-x: hidden;
+@media screen and (max-width:760px) {
+    .global{
+        width: 100%;
+        max-width: 1910px;
+        padding: 20px 15px;
+    }
 }
 h1{
     font-size:50px;
@@ -91,6 +94,36 @@ header .nav-menuContent{
     align-items: center;
     gap: 15px;
 }
+header .menu_burger{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    background-color: var(--background_color_Buttom);
+}
+header .menu_burger span{
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+}
+@media screen and (max-width:760px) {
+    header .logo span{
+        color: var(--color2);
+    }
+    
+    header .nav-menuContent{
+        display: none;
+        align-items: center;
+        gap: 15px;
+    }
+    header .menu_burger{
+        display: flex;
+    }
+}
 /*Header*/
 /*Hero*/
 .hero{
@@ -132,6 +165,35 @@ header .nav-menuContent{
     top: -60%;
     right: 10%;
 
+}
+@media screen and (max-width:760px) {
+    .hero{
+        height: 90vh;
+        padding: 70px 0px;
+    }
+    .hero-textContent h1{
+        font-size: 1.7rem;
+    }
+    .hero .cta{
+        padding: 10px 30px;
+    }
+    .hero img:nth-child(1){
+        width: 200px;
+        top: -20%;
+        left: 12%;
+        z-index: -1;
+    }
+    .hero img:nth-child(2){
+        width: 150px;
+        bottom:-170%;
+        right: 25%;
+    }
+    .hero img:nth-child(3){
+        width: 50px;
+        top: 0%;
+        right: 10%;
+    
+    }
 }
 /*Hero*/
 /*Servicios*/
@@ -210,6 +272,84 @@ header .nav-menuContent{
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+@media screen and (max-width:760px) {
+    .servicios{
+        width: 100%;
+        padding: 40px;
+        margin: 250px 0px;
+        position: relative;
+    }
+    .servicios .sImg{
+        position: absolute;
+    }
+    .servicios .sImg:nth-child(1){
+        bottom:0%;
+        right: 0%;
+        z-index: -1;
+    }
+    .servicios .sImg:nth-child(2){
+        width: 200px;
+        top: 50%;
+        left: -10%;
+        z-index: -1;
+    }
+    .servicios .sImg:nth-child(3){
+        width: 150px;
+        bottom:-5%;
+        left: 25%;
+        z-index: -1;
+    }
+    .servicios .sImg:nth-child(4){
+        width: 150px;
+        top: 0%;
+        right: 0%;
+        z-index: -1;
+    
+    }
+    .servicios-divContent{
+        display: block;
+        margin:auto;
+        padding: 40px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.40);
+        border-radius: 10px;
+    }
+    
+    .servicios-cardsContent{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        margin-top: 50px;
+        gap: 50px;
+    }
+    
+    .servicios-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 280px;
+        height: 300px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        transition: background-color 0.5s;
+        cursor: pointer;
+    }
+    
+    .servicios-card:hover{
+        background-color:rgb(242, 78, 30, 0.5);
+    }
+    .servicios-cardText{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
 }
 /*Servicios*/
 /*Acerca de*/
