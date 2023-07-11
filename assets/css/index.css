@@ -2,24 +2,23 @@
     /*Variables Header*/
     --H_textSize:16px;
     /*Variables del Hero*/
-    --He_textSize:;
+
     /*Variables del Servicio*/
-    --S_textSize:;
+
     /*Variables del Acerca de*/
-    --A_textSize:;
+
     /*Variables del Portafolio*/
-    --P_textSize:;
+
     /*Variables del Blog*/
-    --B_textSize:;
+
     /*Variables del Contacto*/
-    --C_textSize:;
+
     /*Variables Globales*/
     --background_color:#F1F1F9;
     --background_color_Buttom:#F24E1E;
     --color1:#0a0a0a;
     --color2:#F24E1E;
     --color3:#fff;
-    --font_family:;
     --margin:20px 50px;
     /**/
     /**/
@@ -42,7 +41,11 @@ body{
     max-width: 1910px;
     padding: var(--margin);
 }
-/*Propiedades Globales*/
+
+body{
+    background-color: var(--background);
+    overflow-x: hidden;
+}
 h1{
     font-size:50px;
     text-align: center;
