@@ -1,381 +1,317 @@
 :root{
-    --background:#080808;
+    /*Variables Header*/
+    --H_textSize:16px;
+    /*Variables del Hero*/
+    --He_textSize:;
+    /*Variables del Servicio*/
+    --S_textSize:;
+    /*Variables del Acerca de*/
+    --A_textSize:;
+    /*Variables del Portafolio*/
+    --P_textSize:;
+    /*Variables del Blog*/
+    --B_textSize:;
+    /*Variables del Contacto*/
+    --C_textSize:;
+    /*Variables Globales*/
+    --background_color:#F1F1F9;
+    --background_color_Buttom:#F24E1E;
+    --color1:#0a0a0a;
+    --color2:#F24E1E;
+    --color3:#fff;
+    --font_family:;
+    --margin:20px 50px;
+    /**/
+    /**/
+    /**/
+    /**/
 }
 *{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #fff;
+  margin: 0%;
+  padding: 0%; 
+  box-sizing: border-box; 
 }
 
-html,
 body{
-    background-color: var(--background);
-    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background_color);
 }
-/*Global Start*/
+.global{
+    width: 100%;
+    max-width: 1910px;
+    padding: var(--margin);
+}
+/*Propiedades Globales*/
 h1{
-    font-size: 50px;
-}
-h2{
-    font-size: 30px;
-    color: #27C93F;
-    font-weight: bold;
-}
-h3{
-    font-size: 20px;
-}
-h4{
-
+    font-size:50px;
+    text-align: center;
+    line-height: 130%;
 }
 a{
     text-decoration: none;
+    color: var(--color1);
 }
-p{
-    font-size: 18px;
-}
-.btm_global{
-    width: 130px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000000;
-    font-size: 14px;
-    background-color: #27C93F;
+.cta{
+    padding: 10px 15px;
     border-radius: 100px;
-    cursor: pointer;
+    color: var(--color3);
+    background-color:var(--background_color_Buttom);
 }
-/*Global End*/
-/*Header Start*/
-
-header nav{
+.cta:hover{
+    background-color: #e54210;
+}
+.cta:active{
+    transform: scale(0.95);
+    background-color:var(--background_color_Buttom);
+}
+/*Propiedades Globales*/
+/*Header*/
+header{
     width: 100%;
-    position: fixed;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    z-index: 9;
-    background-color: var(--background);
 }
-header nav .btn_menu{
-    display: none;
+
+header .logo{
+    color: var(--color1);
 }
-header nav .btn_menu span{
+
+header .logo span{
+    color: var(--color2);
+}
+
+header .nav-menuContent{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/*Header*/
+/*Hero*/
+.hero{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-textContent{
+    margin-bottom: 60px;
+}
+.hero-textContent h1{
+    margin-bottom: 10px;
+}
+.hero .cta{
+    padding: 10px 30px;
+}
+/*Hero*/
+/*Servicios*/
+.servicios{
+    width: 100%;
+    padding: 40px;
+    margin: 250px 0px;
+}
+.servicios-divContent{
     display: block;
-    margin: 4px;
-    width: 20px;
-    height: 3px;
+    margin:auto;
+    padding: 40px;
+    width: 100%;
+    height: auto;
+    text-align: center;
     background-color: #fff;
-}
-header nav .menu{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    font-size: 18px;
-}
-@media screen and (max-width:768px) {
-    header nav .btn_menu{
-        display: block;
-        z-index: 1;
-    }
-    header nav .menu{
-        width: 100%;
-        position: absolute;
-        top: -220px;
-        right: 0%;
-        padding: 20px;
-        flex-direction: column;
-        align-items: end;
-        background-color: var(--background);
-        transition: top 1s;
-    }
-    header nav .menu--show{
-        position: absolute;
-        top: 50px;
-        right: 0%;
-    }
-}
-/*Header End*/
-/*Main Start*/
-main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px 50px;
-}
-@media screen and (max-width:768px) {
-    main{
-        padding: 5px 20px;
-    }
-}
-/*Main End*/
-/*Hero Start*/
-main .hero{
-    width: 100%;
-    max-width: 1380px;
-    margin: 100px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-}
-main .hero_text{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-main .content_title{
-    line-height: 40px;
-}
-main .hero_text .work{
-    color: #27C93F;
-}
-main .hero_console{
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
-main .draw_console{
-    width: 518px;
-    height: 349px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 20px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.40);
     border-radius: 10px;
-    background-color: #282A36;
 }
-main .draw_btns{
-   display: flex; 
-   gap: 10px;
-}
-main .circle{
-    width: 20px;
-    height: 20px;
-    border-radius: 100px;
-}
-main .circle1{ background-color: #FF5E55;}
-main .circle2{ background-color: #FFBD2E;}
-main .circle3{ background-color: #27C93F;}
 
-main .class{
-    color: #FFBD2E;
-}
-main .this{
-    color:#3771C8 ;
-}
-main .string{
-    color:#27C93F ;
-}
-@media screen and (max-width:768px) {
-    main .hero{
-        margin: 100px 0px;;
-        flex-direction: column-reverse;
-        gap: 50px;
-    }
-}
-/*Hero End*/
-/*About Start*/
-.about{
-    width: 100%;
-    max-width: 1380px;
-    display: flex;
-    align-items: center;
-    margin: 200px 0px;
-    padding: 100px 50px;
-    background-color: #282a362a;
-    border-radius: 10px;
-}
-.about_image{
-    width: 100%;
-    display: flex;
-}
-.about_text{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.about_circle{
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-.acircle{
-    width: 40px;
-    height: 40px;
-    border: 3px solid #27C93F;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: background-color 0.5s;
-}
-.acircle:hover{
-    background-color: #27C93F;
-}
-.levelMinMax{
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-}
-.social{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.social i{
-    font-size: 30px;
-    color: #ffffff;
-    transition: color 0.5s;
-}
-.about-item{
-    display: flex;
-    flex-direction: column;
-}
-.about-item img{
-    width: 100%;
-    height: 100%;
-    max-width: 350px;
-}
-.social i:hover{
-    color: #27C93F;
-}
-@media screen and (max-width:768px) {
-    .about{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 100px 0px;
-        background-color: #282a362a;
-        margin: 200px 0px;
-        gap: 50px;
-    }
-    .about_image{
-        justify-content: center;
-    }
-    .about_text{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-}
-/*About End*/
-/*Portfolio Start*/
-.portfolio,
-.practices{
-    max-width: 1380px;
-    margin: 200px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-.portfolio h2{
-    font-size: 30px;
-    color: #27C93F;
-    font-weight: bold;
-}
-#portfolio{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-.categories{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-#portfolio-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    z-index: 1;
-}
-.portfolio-item{
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-}
-.portfolio-item img{
-    width: 100%;
-    height: 100%;
-    max-width: 350px;
-}
-.category_portfolio{
-    cursor: pointer;
-    padding: 5px 20px;
-}
-.ct_item-active{
-    border-radius: 100px;
-    background-color: #27C93F;
-}
-#portfolio-items{
-    width: 100%;
+.servicios-cardsContent{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    gap: 20px;
+    grid-template-columns: repeat(3, minmax(280px,1fr));
+    place-items: center;
+    margin-top: 50px;
+    gap: 50px;
 }
 
-#portfolio-items img{
-    width: 100%;
-    height: 100%;
-    max-width: 500px;
+.servicios-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 280px;
+    height: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+    cursor: pointer;
 }
-/*Portfolio End*/
-/**/
+
+.servicios-card:hover{
+    background-color:rgb(242, 78, 30, 0.5);
+}
+.servicios-cardText{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+/*Servicios*/
+/*Acerca de*/
+.acercade{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 250px 0px;
+}
+
+.acercade-textContent{
+    width: 450px;
+}
+/*Acerca de*/
+/*Portafolio*/
+.portafolio{
+    width: 100%;
+    height: auto;
+    margin: 250px 0px;
+}
+.portafolio h2{
+
+}
+.portafolio-cardContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+.portafolio .portafolio-card{
+    display: flex;
+    position: relative;
+}
+.portafolio .portafolio-card:nth-child(2){
+    width: 100%;
+    justify-content: end;
+}
+.portafolio .portafolio-textContent{
+    width: 675px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 10px;
+    gap: 30px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.40);
+}
+.portafolio .portafolio-textContent p{
+    line-height: 150%;
+}
+.p_item1{
+    top: 10%;
+    right: 10%;
+}
+.p_item2{
+    top: 10%;
+    left: 10%;
+}
+.p_item3{
+    top: 10%;
+    right: 10%;
+}
+.p_titleContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Portafolio*/
+/*Blog*/
 .blog{
     width: 100%;
-    margin: 200px 0px;
+    padding: 40px;
+    margin: 250px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    justify-content: center;
 }
-.title_blog{
+.blog-cardContent{
+    display: block;
+    margin:auto;
+    padding: 40px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.40);
+    border-radius: 10px;
+}
+
+.blog-cardContent img{
+    width: 100%;
+    border-radius: 5PX;
+}
+.blog-cardsContent{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px,10%));
+    justify-content: center;
+    place-items: center;
+    margin: 50px 0px;
+    gap: 30px;
+}
+/*Blog*/
+/*Contacto*/
+.contacto{
+    width: 100%;
+    padding: 40px;
+    margin: 250px 0px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
-.blogCards{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    justify-content: space-between;
-    gap: 20px;
-}
-.card{
-    width: 100%;
-    background-color: #282A36;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.card img{
-    width: 100%;
-}
-.card_text{
+.contacto-formulario{
     display: block;
-    padding: 10px;
+    margin:auto;
+    padding: 40px;
+    height: auto;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.40);
+    border-radius: 10px;
 }
-.card_text h4{
-    font-size: 20px;
+form{
+    margin: 25px 0px;
 }
-.autor{
-     color: #27C93F;
+.formulario-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+
 }
-@media screen and (max-width:768px) {
-    
+textarea,
+input{
+    border: none;
+    padding: 15px;
+    background-color: #e9e9e9;
 }
+input{
+    width: 300px;
+    height: 60px;
+    border-radius: 100px;
+}
+textarea{
+    width: 300px;
+    border-radius: 10px;
+}
+input::placeholder{
+    border: none;
+}
+/*Contacto*/
+
