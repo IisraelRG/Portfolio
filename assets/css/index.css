@@ -275,6 +275,11 @@ header .menu_burger span{
     flex-direction: column;
     gap: 5px;
 }
+@media screen and (max-width:1200px) {
+    .servicios-cardsContent{
+        grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+    }
+}
 @media screen and (max-width:760px) {
     .servicios{
         padding: 0px;
@@ -319,13 +324,7 @@ header .menu_burger span{
     }
     
     .servicios-cardsContent{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-        margin-top: 50px;
         padding: 15px;
-        gap: 50px;
     }
     
     .servicios-card{
@@ -594,6 +593,11 @@ header .menu_burger span{
     margin: 50px 0px;
     gap: 30px;
 }
+@media screen and (max-width:1200px) {
+    .blog-cardsContent{
+        grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+    }
+}
 @media screen and (max-width:760px) {
     .blog{
         padding: 0px;
@@ -739,16 +743,16 @@ input::placeholder{
         background-color: #e9e9e9;
     }
     input{
-        width: 300px;
+        width: 80vw;
         height: 40px;
         border-radius: 100px;
     }
     textarea{
-        width: 300px;
+        width: 80vw;
         border-radius: 10px;
     }
     input::placeholder{
-        border: none;
+        border-radius: none;
     }
 }
 /*Contacto*/
