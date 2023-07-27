@@ -163,14 +163,14 @@ a{
         text-align: center;
     }
     .hero .text-hero .title-hero{
-        line-height: 3rem;
+        line-height: 5rem;
     }
     .hero .text-hero .title-hero h1{
-        font-size: 3rem;
+        font-size: 5rem;
         text-align: center;
     }
     .hero .text-hero .title-hero p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .hero .text-hero .btn-hero-container{
         width: 7em;
@@ -183,7 +183,12 @@ a{
     }
     
     .btn-a{
-        padding: 5px 15px;
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
         border-radius: 100px;
         background-color: #F24E1E;
     }
