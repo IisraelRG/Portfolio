@@ -136,18 +136,18 @@ a{
         font-size: 1.4rem;
     }
     .hero header .menu-burguer{
-        width: 9vw;
-        height: 9vw;
+        width: 40px;
+        height: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 2px;
+        gap: 3px;
         border-radius: 100px;
         background-color: #F24E1E;
     }
     .hero header .menu-burguer span{
-        width: 15px;
+        width: 50%;
         height: 2px;
         background-color: #ffffff;
     }
@@ -161,7 +161,6 @@ a{
         gap: 50px;
         color: #fff;
         text-align: center;
-        background-color: rgb(242, 78, 30, 0.4);
     }
     .hero .text-hero .title-hero{
         line-height: 3rem;
