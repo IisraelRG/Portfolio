@@ -104,9 +104,12 @@ a{
 }
 @media (max-width:760px){
     .hero{
-        height: 600px;
-        background-size: 100vh;
+        height: 100vh;
+        background: url('../img/herobg.png');
+        background-repeat: no-repeat;
+        background-size: 100vh 100vh;
         padding: 0px 0px;
+        background-color: #F24E1E;
 
     }
     .hero header{
@@ -260,7 +263,7 @@ a{
         position: relative;
     }
     .servicios-content{
-        top: -220px;
+        top: -20px;
         width: 90%;
     }
     .servicios h2{
