@@ -246,7 +246,7 @@ a{
     }
     .servicios-content{
         position:static;
-        width: 80%;
+        width: 90%;
         transform: translateX(0%);
     }
     .servicios h2{
