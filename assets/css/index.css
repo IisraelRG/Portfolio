@@ -203,7 +203,7 @@ a{
 .card-container{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,300px);
+    grid-template-columns: repeat(3,minmax(200px, 1fr));
     justify-content: center;
     gap: 50px;
 }
@@ -237,11 +237,12 @@ a{
 .card-container .card .text-card p{
     font-size: 1.3rem;
 }
-@media (max-width:760px) {
+@media (max-width:750px) {
     .servicios{
         height: auto;
         display: flex;
         justify-content: center;
+        padding: 100px 0px;
     }
     .servicios-content{
         position:static;
@@ -317,12 +318,13 @@ a{
 .portfolio-card-content{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,300px);
-    justify-content: center;
+    grid-template-columns: repeat(3,minmax(200px, 1fr));
+    place-items: center;
     gap: 50px;
+    padding: 0px 100px;
 }
 .portfolio-card{
-    width: 250px;
+    width: 100%;
     height: 300px;
     position: relative;
     overflow: hidden;
@@ -399,12 +401,12 @@ a{
 .blog .content-blog{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,300px);
-    justify-content: center;
+    grid-template-columns: repeat(3,minmax(200px, 1fr));
+    place-items: center;
     gap: 50px;
 }
 .blog .content-blog img{
-    width: 300px;
+    width: 80%;
     height: 150px;
     border-radius: 10px;
 }
@@ -417,18 +419,6 @@ a{
 .blog h2{
     font-size: 2.5rem;
     margin-bottom: 50px;
-}
-.blog .content-blog{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,300px);
-    justify-content: center;
-    gap: 50px;
-}
-.blog .content-blog img{
-    width: 300px;
-    height: 150px;
-    border-radius: 10px;
 }
 @media (max-width:760px) {
     .blog{
@@ -443,7 +433,11 @@ a{
     }
     .blog .content-blog{
         grid-template-columns: 1fr;
-        place-items: center;
+    }
+    .blog .content-blog img{
+        width: 60%;
+        height: 150px;
+        border-radius: 10px;
     }
 }
 /*Fin Blog*/
@@ -453,7 +447,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
+    padding: 20px 50px;
 }
 .social-network{
     width: 400px;
@@ -497,7 +491,7 @@ input{
     color:black;
     background-color: transparent;
 }
-@media (max-width:760px) {
+@media (max-width:860px) {
     .contact{
         width: 100%;
         flex-direction: column;
