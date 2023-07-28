@@ -121,11 +121,31 @@ a{
         align-items: center;
         gap: 10px;
     }
+    .hero header .menu--show{
+        position: absolute;
+        top: 70px;
+        left: 0%;
+        right: 0%;
+        padding: 50px 0px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: #F24E1E;
+    }
     .hero header .menu .btn-a{
         display: block;
         padding: 10px 15px;
         border-radius: 100px;
         background-color: rgb(242, 78, 30);
+    }
+    .hero header .menu .cv--show{
+        width: 150px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        background-color: rgb(255, 255, 255);
     }
     .hero header .menu .btn-a:active{
         padding: 8px 12px;
@@ -141,6 +161,7 @@ a{
         gap: 3px;
         border-radius: 100px;
         background-color: #F24E1E;
+        cursor: pointer;
     }
     .hero header .menu-burguer span{
         width: 50%;
@@ -475,7 +496,7 @@ a{
     padding-left: 20px;
 }
 .active{
-    background-color: #F24E1E;
+    background-color: #fab9a5;
 }
 
 input{
@@ -484,6 +505,9 @@ input{
     outline: none;
     color:black;
     background-color: transparent;
+}
+.enviar{
+    background-color: #F24E1E;
 }
 @media (max-width:860px) {
     .contact{
