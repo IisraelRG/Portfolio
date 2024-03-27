@@ -231,6 +231,9 @@ svg{
 .home__data{
     text-align: center;
 }
+.home__Text{
+    line-height: 55px;
+}
 .home__subtitle,
 .home__education{
     font-size: var(--bigger-font-size);
@@ -269,6 +272,7 @@ svg{
 }
 
 .home__image{
+    width: 400px;
     justify-self: center;
 }
 
@@ -281,7 +285,7 @@ svg{
 .button{
     display: inline-block;
     background-color: var(--first-color);
-    padding: 1rem 1.75rem;
+    padding: .75rem 1.75rem;
     border-radius: .5rem;
     color: var(--title-color);
     font-weight: var(--font-medium);
@@ -301,9 +305,11 @@ svg{
     margin-bottom: 2rem;
 }
 .about__image{
+    width: 400px;
     display: flex;
     justify-content: center;
 }
+
 .about__blob{
     width: 320px;
 }
