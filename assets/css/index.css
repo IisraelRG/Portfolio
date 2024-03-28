@@ -392,6 +392,9 @@ svg{
 /*==================== PROJECTS ====================*/
 .projects{
     background-color: var(--container-color);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .projects__container{
@@ -598,7 +601,7 @@ svg{
     }
 }
 /* FOR MEDIUM DEVICES */
-@media screen and (min-width:576px){
+@media screen and (max-width:576px){
     .home__container,
     .about__container,
     .skills__container,
@@ -606,6 +609,12 @@ svg{
     .projects__container,
     .contact__container{
         grid-template-columns: 360px;
+        justify-content: center;
+    }
+    .home__image,
+    .about__image{
+        width: 100%;
+        display: flex;
         justify-content: center;
     }
 }
@@ -620,6 +629,7 @@ svg{
     .skills__container{
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
+        place-content: center center;
     }
     .home__data,
     .about__data,
@@ -639,7 +649,9 @@ svg{
     }
     .services__container,
     .projects__container{
+        width: 100%;
         grid-template-columns: repeat(2, 352px) ;
+        place-content: center;
     }
 }
 /* FOR LARGE DEVICES */
@@ -755,6 +767,7 @@ svg{
     .contact__container{
         grid-template-columns: 680px;
         padding-block: 2.5rem 2rem;
+        place-content: center center;
     }
 
     .contact__form{
