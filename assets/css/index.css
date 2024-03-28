@@ -232,7 +232,11 @@ svg{
     text-align: center;
 }
 .home__Text{
-    line-height: 55px;
+    line-height: 75px;
+}
+
+.home__Text1{
+    line-height: 45px;
 }
 .home__subtitle,
 .home__education{
@@ -608,14 +612,22 @@ svg{
     .services__card:hover,
     .projects__container,
     .contact__container{
+   
         grid-template-columns: 360px;
         justify-content: center;
-    }
+    }    
+
     .home__image,
     .about__image{
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+    .home__Text{
+        line-height: 45px;
+    }
+    .home__Text1{
+        line-height: 35px;
     }
 }
 
@@ -652,6 +664,15 @@ svg{
         width: 100%;
         grid-template-columns: repeat(2, 352px) ;
         place-content: center;
+    }
+    .contact{
+        width: 100%;
+
+    }
+    .contact__container{
+        width: 70vw;
+        display: block;
+        margin: auto;
     }
 }
 /* FOR LARGE DEVICES */
